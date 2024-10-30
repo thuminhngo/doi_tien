@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/sourceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="currencyAmount"
+        android:gravity="center"
+        android:hint="@string/enter_amount"
+        android:inputType="numberDecimal"
+        android:maxWidth="300dp"
+        android:padding="12dp" />
+
+    <Spinner
+        android:id="@+id/sourceCurrencySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:padding="15dp"
+        android:background="?android:attr/selectableItemBackground" />
+
+    <EditText
+        android:id="@+id/targetEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="currencyAmount"
+        android:enabled="false"
+        android:gravity="center"
+        android:hint="@string/converted_amount"
+        android:inputType="none"
+        android:maxWidth="300dp"
+        android:padding="12dp" />
+
+    <Spinner
+        android:id="@+id/targetCurrencySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:padding="15dp"
+        android:background="?android:attr/selectableItemBackground" />
+
+</LinearLayout>
